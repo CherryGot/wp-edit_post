@@ -1,23 +1,26 @@
 {
-	"name": "@wordpress/edit-post",
+	"name": "@cherrygot/wp-edit_post",
 	"version": "7.12.17",
-	"description": "Edit Post module for WordPress.",
-	"author": "The WordPress Contributors",
+	"description": "Extended Edit Post module for WordPress.",
+	"contributors": [
+    "The WordPress Contributors",
+    "Chakrapani Gautam <contact@cherrygot.me>"
+  ],
 	"license": "GPL-2.0-or-later",
 	"keywords": [
+    "cherrygot",
 		"wordpress",
 		"gutenberg",
 		"editor",
 		"post"
 	],
-	"homepage": "https://github.com/WordPress/gutenberg/tree/HEAD/packages/edit-post/README.md",
+	"homepage": "https://github.com/CherryGot/wp-edit_post/tree/HEAD/README.md",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/WordPress/gutenberg.git",
-		"directory": "packages/edit-post"
+		"url": "git@github.com:CherryGot/wp-edit_post.git"
 	},
 	"bugs": {
-		"url": "https://github.com/WordPress/gutenberg/issues"
+		"url": "https://github.com/CherryGot/wp-edit_post/issues"
 	},
 	"engines": {
 		"node": ">=12"
