@@ -45,7 +45,7 @@ const { LayoutStyle, useLayoutClasses, useLayoutStyles } = unlock(
 	blockEditorPrivateApis
 );
 
-const isGutenbergPlugin = process.env.IS_GUTENBERG_PLUGIN ? true : false;
+const isGutenbergPlugin = false;
 
 function MaybeIframe( { children, contentRef, shouldIframe, styles, style } ) {
 	const ref = useMouseMoveTypingReset();
