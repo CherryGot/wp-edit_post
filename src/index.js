@@ -2,10 +2,7 @@
  * WordPress dependencies
  */
 import { store as blocksStore } from '@wordpress/blocks';
-import {
-	registerCoreBlocks,
-	__experimentalRegisterExperimentalCoreBlocks,
-} from '@wordpress/block-library';
+import { registerCoreBlocks } from '@wordpress/block-library';
 import deprecated from '@wordpress/deprecated';
 import { createRoot } from '@wordpress/element';
 import { dispatch, select } from '@wordpress/data';
@@ -76,11 +73,6 @@ export function initializeEditor(
 	registerCoreBlocks();
 	registerLegacyWidgetBlock( { inserter: false } );
 	registerWidgetGroupBlock( { inserter: false } );
-	if ( process.env.IS_GUTENBERG_PLUGIN ) {
-		__experimentalRegisterExperimentalCoreBlocks( {
-			enableFSEBlocks: settings.__unstableEnableFullSiteEditingBlocks,
-		} );
-	}
 
 	/*
 	 * Prevent adding template part in the post editor.
